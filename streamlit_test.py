@@ -1,5 +1,3 @@
-# Data Science Test Example
-# Let's check that this still works
 
 # Streamlit live coding script
 import streamlit as st
@@ -13,10 +11,11 @@ from copy import deepcopy
 
 #Data from: https://data.open-power-system-data.org/renewable_power_plants/
 
-st.write("Hello World")
+st.write("This is my streamlit Application - Visualizating Green Energy Locations in Switzerland")
 st.write("New Change")
 
 clean_energy_ch = pd.read_csv("https://data.open-power-system-data.org/renewable_power_plants/2020-08-25/renewable_power_plants_CH.csv")
 clean_energy_ch.head()
 
+st.write("This is a Data Frame with all our Data:")
 st.write(clean_energy_ch)
